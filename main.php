@@ -1,23 +1,36 @@
 
-<?php>
-$x = 10;
-$y = 20;
-$z = 10;
+<?php
+$x = '';
+$y = NULL;
+$z;
+$i = (2-2);
 
-if($x < $y){
-	echo "x is bigger than y";
+
+if(isset($x)){
+	print('x is not NULL');
 }
 
-if ($x != $y){
-	echo "x is not equal to y";
+if (empty($y)){
+	print "y is empty";
 }
 
-if ($x = $z){
-	echo "x is equal to y";
+if (is_null($z)){
+	print "z is NULL";
 }
 
-if($x != $z){
-	echo "x is not equal to z";
+if(empty($i)){
+	print "i is equal to 0 but considered empty";
 }
+
+switch($x){
+
+	case NULL:
+	echo "Null value";
+	break;
+}
+
+
+
 
 ?>
+
