@@ -32,10 +32,20 @@ switch($x){
 }
 switch($y){
 	case NULL:
-	echo empty($y);
+	echo "This value is Null <br>";
+	break;
 }
 
-
+switch($z){
+	case NULL:
+	echo "This value is null <br>";
+	break;
+}
+switch($i){
+	case 0:
+	echo "This value is 0 <br>";
+	break;
+}
 
 ?>
 
